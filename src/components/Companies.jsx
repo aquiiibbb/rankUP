@@ -14,13 +14,29 @@ export default function Companies() {
           {companies.map((c) => (
             <article className="company" key={c.name}>
               <div className="company-header">
-                <div className="company-logo-pill">
-                  {c.logo ? (
-                    <img src={c.logo} alt={`${c.name} logo`} className="company-logo-img" />
-                  ) : (
-                    <span className="mono">{c.name.charAt(0)}</span>
-                  )}
-                </div>
+                {c.url ? (
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="company-logo-pill"
+                    title={`Visit ${c.name} website`}
+                  >
+                    {c.logo ? (
+                      <img src={c.logo} alt={`${c.name} logo`} className="company-logo-img" />
+                    ) : (
+                      <span className="mono">{c.name.charAt(0)}</span>
+                    )}
+                  </a>
+                ) : (
+                  <div className="company-logo-pill">
+                    {c.logo ? (
+                      <img src={c.logo} alt={`${c.name} logo`} className="company-logo-img" />
+                    ) : (
+                      <span className="mono">{c.name.charAt(0)}</span>
+                    )}
+                  </div>
+                )}
                 <div className="company-title-wrap">
                   <h3>{c.name}</h3>
                   <span className="tag">{c.tag}</span>

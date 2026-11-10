@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './hero.css'
 
 const SLIDES = [
@@ -111,12 +112,12 @@ export default function Hero() {
             high ROAS, and scalable business growth through SEO, paid ads, custom websites, mobile apps, and marketing automation.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-solid btn-lg" href="#contact">
+            <Link className="btn btn-solid btn-hero" to="/book-meeting">
               Book a Free Strategy Call
-            </a>
-            <a className="btn btn-ghost btn-lg" href="#services">
+            </Link>
+            <Link className="btn btn-ghost btn-hero" to="/services">
               Explore Services
-            </a>
+            </Link>
           </div>
           <ul className="hero-points">
             <li>SEO</li>
@@ -232,24 +233,61 @@ export default function Hero() {
           </div>
 
           <div className="trend" aria-hidden="true">
-            <svg viewBox="0 0 220 90">
-              <defs>
-                <linearGradient id="g" x1="0" x2="1">
-                  <stop offset="0" stopColor="#1B7F86" />
-                  <stop offset="1" stopColor="#2FC47A" />
-                </linearGradient>
-              </defs>
-              <path
-                className="draw"
-                d="M8 78 L50 58 L84 66 L130 34 L160 44 L208 10"
-                fill="none"
-                stroke="url(#g)"
-                strokeWidth="6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <small>Rapid Traffic Growth</small>
+            <div className="trend-head">
+              <div className="trend-stat-badge">
+                <svg
+                  viewBox="0 0 16 16"
+                  width="11"
+                  height="11"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="trend-arrow"
+                >
+                  <path d="M2 11l5-5 3 3 4-6" />
+                  <path d="M10 3h4v4" />
+                </svg>
+                <span>+248%</span>
+              </div>
+              <span className="trend-tag">LIVE ROI</span>
+            </div>
+
+            <div className="trend-chart-box">
+              <svg viewBox="0 0 220 44" className="trend-svg">
+                <defs>
+                  <linearGradient id="trend-stroke-grad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stopColor="#1B7F86" />
+                    <stop offset="100%" stopColor="#2FC47A" />
+                  </linearGradient>
+                  <linearGradient id="trend-fill-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#2FC47A" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#2FC47A" stopOpacity="0.0" />
+                  </linearGradient>
+                </defs>
+                <polygon
+                  points="8,38 50,28 84,32 130,16 160,21 208,6 208,44 8,44"
+                  fill="url(#trend-fill-grad)"
+                />
+                <path
+                  className="draw"
+                  d="M8 38 L50 28 L84 32 L130 16 L160 21 L208 6"
+                  fill="none"
+                  stroke="url(#trend-stroke-grad)"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle cx="208" cy="6" r="3.5" fill="#2FC47A" />
+                <circle cx="208" cy="6" r="7" fill="none" stroke="#2FC47A" strokeWidth="1.4" className="trend-ping" />
+              </svg>
+            </div>
+
+            <div className="trend-info">
+              <span className="trend-title">Rapid Traffic Growth</span>
+              <span className="trend-subtitle">Verified Google Analytics</span>
+            </div>
           </div>
         </div>
       </div>

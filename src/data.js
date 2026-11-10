@@ -1,7 +1,8 @@
 // ====== CENTRAL SITE CONTENT CONFIGURATION ======
 
-export const PHONES = ['9883330353', '7890009119']
-export const WHATSAPP = '919883330353' // Country code included, without '+'
+export const PHONES = ['+91 98833 30353']
+export const WHATSAPP = '919135770521' // WhatsApp lead funnel number (91357 70521 with +91 country code)
+export const EMAIL = 'wasi@ranksup.tech' // Official contact and meeting dispatch email
 
 export const stats = [
   { value: '250K+', label: 'Verified Leads Generated' },
@@ -48,7 +49,7 @@ export const companies = [
     tag: 'Real Estate & Property Perfection',
     text: 'High-converting property discovery portal and CRM. Complete on-page SEO, high-intent Google & Meta lead generation campaigns, and automated inquiry capture.',
     points: ['Property Portal', 'SEO Growth', 'High-Intent Lead Ads'],
-    url: '',
+    url: 'https://www.truenester.com/',
   },
   {
     name: 'ELOVAA',
@@ -56,7 +57,7 @@ export const companies = [
     tag: 'Beauty Academy & Cosmetics',
     text: 'Premier beauty academy and professional cosmetics brand. Full-scale digital presence, course enrollment funnels, viral social media campaigns, and editorial bridal shoots.',
     points: ['Beauty Academy', 'Cosmetics', 'Bridal & Editorial Funnels'],
-    url: '',
+    url: 'https://elovaa.com/',
   },
   {
     name: 'Sygenix',
@@ -64,7 +65,7 @@ export const companies = [
     tag: 'Enterprise Tech & Digital Solutions',
     text: 'Modern corporate web architecture and digital strategy. Fullstack web platform, enterprise B2B positioning, technical SEO, and conversion optimization.',
     points: ['Enterprise Web', 'Technical SEO', 'B2B Client Funnels'],
-    url: '',
+    url: 'https://www.brandbucket.com/names/sygenix',
   },
   {
     name: 'Glycon',
@@ -72,7 +73,7 @@ export const companies = [
     tag: 'Pharma & Healthcare Innovation',
     text: 'Clean, authoritative digital portal for pharmaceutical products. Clinical credibility branding, local SEO visibility, and automated distributor inquiry workflows.',
     points: ['Pharma Portal', 'Healthcare SEO', 'Inquiry Automation'],
-    url: '',
+    url: 'https://www.amberddesign.com/portfolio/glycon/',
   },
   {
     name: 'Fullstack Guru',
@@ -80,7 +81,7 @@ export const companies = [
     tag: 'Web Development & Tech Academy',
     text: 'Comprehensive tech education and custom software development platform. High-speed React/Node web portal, automated student onboarding, and targeted ad funnels.',
     points: ['React & Node.js', 'Custom Software', 'Student Funnels'],
-    url: '',
+    url: 'https://www.fullstackguru.net/',
   },
   {
     name: 'Hello Royer',
@@ -88,7 +89,7 @@ export const companies = [
     tag: 'On-Demand Home Services',
     text: 'Rapid home appliance repair and maintenance platform. Local Google Service Ads, instant click-to-call funnels, and automated WhatsApp technician scheduling.',
     points: ['Appliance Services', 'Local SEO', 'Booking Funnels'],
-    url: '',
+    url: 'https://helloroyer.com/',
   },
   {
     name: 'Ocean Paradise',
@@ -96,20 +97,20 @@ export const companies = [
     tag: 'Boutique Hospitality & Stays',
     text: 'Serene coastal hospitality venture. Luxury booking website, high-engagement visual social media storytelling, and direct reservation funnels.',
     points: ['Luxury Stays', 'Direct Booking Engine', 'Visual Branding'],
-    url: '',
+    url: 'https://www.oceanparadisehotel.us/',
   },
 ]
 
 // Portfolio and client projects
 export const work = [
   { name: "Rank's Up", domain: 'Ranksup.online', kind: 'Digital marketing agency platform', url: 'https://ranksup.online' },
-  { name: 'Truenester', domain: 'Truenester.com', kind: 'Real estate portal, SEO & lead generation ads', url: '' },
-  { name: 'ELOVAA', domain: 'Elovaa.com', kind: 'Beauty academy & luxury cosmetics brand website', url: '' },
-  { name: 'Sygenix', domain: 'Sygenix.io', kind: 'Enterprise tech solutions & corporate web platform', url: '' },
-  { name: 'Glycon', domain: 'Glycon.in', kind: 'Healthcare & pharmaceutical product web portal', url: '' },
-  { name: 'Fullstack Guru', domain: 'Fullstackguru.in', kind: 'EdTech learning portal & custom software platform', url: '' },
-  { name: 'Hello Royer', domain: 'Helloroyer.com', kind: 'On-demand home services booking platform & local SEO', url: '' },
-  { name: 'Ocean Paradise', domain: 'Oceanparadise.in', kind: 'Boutique resort & luxury hospitality booking site', url: '' },
+  { name: 'Truenester', domain: 'Truenester.com', kind: 'Real estate portal, SEO & lead generation ads', url: 'https://www.truenester.com/' },
+  { name: 'ELOVAA', domain: 'Elovaa.com', kind: 'Beauty academy & luxury cosmetics brand website', url: 'https://elovaa.com/' },
+  { name: 'Sygenix', domain: 'Sygenix.io', kind: 'Enterprise tech solutions & corporate web platform', url: 'https://www.brandbucket.com/names/sygenix' },
+  { name: 'Glycon', domain: 'Glycon.in', kind: 'Healthcare & pharmaceutical product web portal', url: 'https://www.amberddesign.com/portfolio/glycon/' },
+  { name: 'Fullstack Guru', domain: 'Fullstackguru.net', kind: 'EdTech learning portal & custom software platform', url: 'https://www.fullstackguru.net/' },
+  { name: 'Hello Royer', domain: 'Helloroyer.com', kind: 'On-demand home services booking platform & local SEO', url: 'https://helloroyer.com/' },
+  { name: 'Ocean Paradise', domain: 'Oceanparadisehotel.us', kind: 'Boutique resort & luxury hospitality booking site', url: 'https://www.oceanparadisehotel.us/' },
 ]
 
 export const steps = [

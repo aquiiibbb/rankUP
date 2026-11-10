@@ -19,11 +19,14 @@ export default function Contact() {
           <h2>Ready to Scale Your Business? Let's Talk.</h2>
           <p className="lead">Fill out the quick form below to start a direct consultation with our growth strategists on WhatsApp.</p>
           <div className="phones">
-            {PHONES.map((p) => (
-              <a key={p} href={`tel:+91${p}`}>
-                {p}
-              </a>
-            ))}
+            {PHONES.map((p) => {
+              const tel = p.replace(/\s+/g, '')
+              return (
+                <a key={p} href={tel.startsWith('+') ? `tel:${tel}` : `tel:+91${tel}`}>
+                  {p}
+                </a>
+              )
+            })}
           </div>
           <p className="domain">ranksup.online</p>
         </div>
@@ -40,8 +43,8 @@ export default function Contact() {
             How can we help you? (Project Requirements)
             <textarea rows="4" required value={f.need} onChange={set('need')} placeholder="Tell us about your business, current traffic, and growth goals..." />
           </label>
-          <button className="btn btn-solid btn-lg" type="submit">
-            Connect on WhatsApp
+          <button className="btn btn-solid btn-lg contact-submit-btn" type="submit">
+            Connect on WhatsApp →
           </button>
         </form>
       </div>
