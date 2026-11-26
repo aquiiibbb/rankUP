@@ -8,7 +8,7 @@ export const stats = [
   { value: '250K+', label: 'Verified Leads Generated' },
   { value: '5.2x', label: 'Average Client Ad ROAS' },
   { value: '98%', label: 'Client Retention Rate' },
-  { value: '7+', label: 'Brands Scaled to Market Leaders' },
+  { value: '6+', label: 'Brands Scaled to Market Leaders' },
 ]
 
 export const services = [
@@ -91,14 +91,6 @@ export const companies = [
     points: ['Appliance Services', 'Local SEO', 'Booking Funnels'],
     url: 'https://helloroyer.com/',
   },
-  {
-    name: 'Ocean Paradise',
-    logo: '/brands/oceanparadise.png',
-    tag: 'Boutique Hospitality & Stays',
-    text: 'Serene coastal hospitality venture. Luxury booking website, high-engagement visual social media storytelling, and direct reservation funnels.',
-    points: ['Luxury Stays', 'Direct Booking Engine', 'Visual Branding'],
-    url: 'https://www.oceanparadisehotel.us/',
-  },
 ]
 
 // Portfolio and client projects
@@ -110,7 +102,6 @@ export const work = [
   { name: 'Glycon', domain: 'Glycon.in', kind: 'Healthcare & pharmaceutical product web portal', url: 'https://www.amberddesign.com/portfolio/glycon/' },
   { name: 'Fullstack Guru', domain: 'Fullstackguru.net', kind: 'EdTech learning portal & custom software platform', url: 'https://www.fullstackguru.net/' },
   { name: 'Hello Royer', domain: 'Helloroyer.com', kind: 'On-demand home services booking platform & local SEO', url: 'https://helloroyer.com/' },
-  { name: 'Ocean Paradise', domain: 'Oceanparadisehotel.us', kind: 'Boutique resort & luxury hospitality booking site', url: 'https://www.oceanparadisehotel.us/' },
 ]
 
 export const steps = [
